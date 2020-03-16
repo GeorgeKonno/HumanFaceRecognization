@@ -12,7 +12,7 @@ def view_img(filepath):
 filepath = "/home/gliu/Downloads/1.jpeg"
 view_img(filepath)
 
-imagePath = '/home/gliu/Downloads/1.jpeg' #sys.argv[1]
+imagePath = 'yangmi/yangmi_1.jpg' #sys.argv[1]
 #cascPath = 'haarcascades/haarcascade_frontalcatface.xml' #sys.argv[2]
 #cascPath = 'haarcascades/haarcascade_frontalcatface_extended.xml' #sys.argv[2]
 #cascPath = 'haarcascades/haarcascade_frontalface_alt.xml' #sys.argv[2]
