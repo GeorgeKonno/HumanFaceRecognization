@@ -4,15 +4,10 @@ import urllib2
 from bs4 import BeautifulSoup
 import os
  
-num = 0
-numPicture = 0
-file = ''
-List = []
- 
  
 def Find(url):
     global List
-    print('in finding url')
+    print('             ///in finding process///')
     num_of_url = 0
     length_of_string = 0
     while num_of_url < 1000:
@@ -55,9 +50,9 @@ def recommend(url):
 def dowmloadPicture(html, keyword):
     global num
     pic_url = re.findall('"objURL":"(.*?)",', html, re.S)  
-    print('find key word:' + keyword + 'start to download img...')
+    #print('find key word:' + keyword + 'start to download img...')
     for each in pic_url:
-        print('Order is :' + str(num + 1) + 'Address is :' + str(each))
+        print str(num + 1),
         try:
             if each is not None:
                 pic = requests.get(each, timeout=7)
@@ -67,46 +62,71 @@ def dowmloadPicture(html, keyword):
             print('error, check your connection')
             continue
         else:
-            string = file + r'/' + keyword + '_' + str(num) + '.jpg'
+            string = filepath + r'/' + keyword + '_' + str(num) + '.jpg'
             fp = open(string, 'wb')
             fp.write(pic.content)
             fp.close()
             num += 1
         if num >= numPicture:
+            print " "
             return
  
  
-if __name__ == '__main__':  
-    word = raw_input("input key word")
-    url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=' + str(word) + '&pn='
-    tot = Find(url)
-    Recommend = recommend(url)  
-    print('is %stypes consist of %d imgs' % (word, tot))
-    numPicture = int(raw_input('input the limitation number '))
-    file = raw_input('input the folder name')
-    y = os.path.exists(file)
+if __name__ == '__main__':
+    y = os.path.exists('data')
     if y == 1:
-        print('file exists')
-        file = raw_input('input the folder name')
-        os.mkdir(file)
-    else:
-        os.mkdir(file)
-    t = 0
-    tmp = url
-    while t < numPicture:
         try:
-            url = tmp + str(t)
-            result = requests.get(url, timeout=10)
-            print(url)
-        except urllib2.error.HTTPError as e:
-            print('error, check your connection')
-            t = t+60
+            for root, dirs, files in os.walk('data', topdown=False):
+                for name in files:
+                    os.remove(os.path.join(root, name))
+                for name in dirs:
+                    os.rmdir(os.path.join(root, name))
+            os.rmdir('data')
+        except:
+            os.remove('data')
+        os.mkdir('data')
+    else:
+        os.mkdir('data')
+    for line in open("mingxing.txt","r"): 
+        print('----------------------START-----------------------')
+        num = 0
+        numPicture = 0
+        filepath = ''
+        List = []
+        word = line[:-1]
+        url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=' + str(word) + '&pn='
+        tot = Find(url)
+        #Recommend = recommend(url)  
+        numPicture = 20
+        print('       ///is %s consist of %d imgs///' % (word, numPicture))
+        filepath ='data'+'/'+word
+        y = os.path.exists(filepath)
+        if y == 1:
+            print('file exists')
+            print('will delete iniital folder')
+            try:
+                os.rmdir(filepath)
+            except:
+                os.remove(filepath)
+            os.mkdir(filepath)
         else:
-            dowmloadPicture(result.text, word)
-            t = t + 60
- 
-    print('end')
-    print('for more you like')
-    for recommend in Recommend:
-        print(recommend)
-        print '  '
+            os.mkdir(filepath)
+        t = 0
+        tmp = url
+        while t < numPicture:
+            try:
+                url = tmp + str(t)
+                result = requests.get(url, timeout=10)
+                #print(url)
+            except urllib2.error.HTTPError as e:
+                print('error, check your connection')
+                t = t+60
+            else:
+                dowmloadPicture(result.text, word)
+                t = t + 60
+     
+        print('----------------------END-------------------------\n')
+        #print('for more you like')
+        #for recommend in Recommend:
+            #print(recommend)
+            #print '  '

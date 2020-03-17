@@ -1,0 +1,835 @@
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<base href="http://skycc.weisuda.net:9999/">
+
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>一键推广，更简单，欢迎使用skycc组合营销平台</title>
+<meta name="keywords"
+	content="skycc组合营销平台,组合营销平台,组合营销软件,群发软件,博客群发,广告群发,b2b群发" />
+<meta name="description" content="skycc组合营销平台帮助企业快速做好网络营销" />
+<link rel="icon bookmark shortcut" type="image/x-icon"
+	href="/favicon.ico" />
+<link rel="stylesheet" href="/common/css/common.css">
+<link rel="stylesheet" href="/common/css/sign.css">
+<link rel="stylesheet" href="/plug/layer/css/layui.css">
+<link rel="stylesheet" href="/common/css/login.css">
+<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="/css/global.css">
+
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/listapp.css">
+
+<script src="/plug/layer/layui.js"></script>
+<style>
+.indexFour h2 {
+	text-align: center;
+	font-size: 23px;
+	font-weight: normal;
+	padding: 80px 0px 0px 0px;
+	color: #fff;
+}
+/********/
+.indexThreeCon {
+	overflow: hidden;
+	padding: 100px 0px
+}
+
+.indexThree {
+
+}
+
+.indexThree .indexThreeLeft {
+	width: 840px;
+}
+
+.indexThree h2 {
+	height: 50px;
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.indexThree h2 a {
+	float: right;
+	display: inline-block;
+	width: 60px;
+	line-height: 25px;
+	font-size: 12px;
+	background: #424a5a;
+	color: #fff;
+	border-radius: 12px;
+	text-align: center;
+	margin-right: 70px;
+}
+
+.indexThreeLeft ul li {
+	display: block;
+	padding: 30px 0px;
+	width: 240px;
+	float: left;
+	margin-right: 35px;
+}
+
+.indexThreeLeft ul li span {
+	display: block;
+	text-align: center;
+	height: 70px;
+}
+
+.indexThreeLeft ul li h5 {
+	font-size: 14px;
+	padding: 20px 0px;
+	text-align: left;
+	color: #333333;
+	font-weight: normal;
+	height: 30px;
+}
+
+.indexThreeLeft ul li p {
+	font-size: 12px;
+	color: #999
+}
+
+.indexThreeRight {
+	border: 1px solid #eee
+}
+
+.indexThreeRight ul li {
+	padding: 20px 0px;
+	border-bottom: 1px solid #eee;
+}
+
+.indexThreeRight ul li:last-child {
+	border-bottom: none;
+}
+
+.indexThreeRight ul {
+	padding: 0px 10px
+}
+
+.indexThreeRight ul li p {
+	color: #32c7e9;
+	font-size: 12px;
+}
+
+.indexThreeRight ul li span {
+	font-size: 12px;
+}
+
+body {
+	background: url(images/backgroud.jpg) 0px, 0px, 29px, 29px no-repeat;
+	font-family: "微软雅黑";
+	color: #222;
+	font-size: 12px;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.top_div {
+	background: #00a688;
+	width: 100%;
+	height: 400px;
+}
+
+.sign-page .footer-wrapper {
+	padding-top: 176px;
+}
+
+.ipt {
+	border: 1px solid #d3d3d3;
+	padding: 10px 10px;
+	width: 290px;
+	border-radius: 4px;
+	padding-left: 35px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow
+		ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out
+		.15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.ipt:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px
+		rgba(102, 175, 233, .6)
+}
+
+.u_logo {
+	background: url("images/username.png") no-repeat;
+	padding: 10px 10px;
+	position: absolute;
+	top: 43px;
+	left: 40px;
+}
+
+.p_logo {
+	background: url("images/password.png") no-repeat;
+	padding: 10px 10px;
+	position: absolute;
+	top: 12px;
+	left: 40px;
+}
+
+.v_logo {
+	background: url("images/v.png") no-repeat;
+	padding: 10px 10px;
+	position: absolute;
+	top: 12px;
+	left: 40px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.tou {
+	background: url("images/tou.png") no-repeat;
+	width: 97px;
+	height: 92px;
+	position: absolute;
+	top: -87px;
+	left: 140px;
+}
+
+.left_hand {
+	background: url("images/left_hand.png") no-repeat;
+	width: 32px;
+	height: 37px;
+	position: absolute;
+	top: -38px;
+	left: 150px;
+}
+
+.right_hand {
+	background: url("images/right_hand.png") no-repeat;
+	width: 32px;
+	height: 37px;
+	position: absolute;
+	top: -38px;
+	right: -64px;
+}
+
+.initial_left_hand {
+	background: url("images/hand.png") no-repeat;
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	top: -12px;
+	left: 100px;
+}
+
+.initial_right_hand {
+	background: url("images/hand.png") no-repeat;
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	top: -12px;
+	right: -112px;
+}
+
+.left_handing {
+	background: url("images/left-handing.png") no-repeat;
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	top: -24px;
+	left: 139px;
+}
+
+.right_handinging {
+	background: url("images/right_handing.png") no-repeat;
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	top: -21px;
+	left: 210px;
+}
+
+.top_div_bg {
+	background: rgb(255, 255, 255);
+	margin: -100px auto auto;
+	border: 1px solid rgb(231, 231, 231);
+	border-image: none;
+	width: 400px;
+	text-align: center;
+}
+
+.p_h {
+	padding: 30px 0px 10px;
+	position: relative;
+}
+
+.p_h2 {
+	padding: 8px 0px 10px;
+	position: relative;
+}
+
+.p_h2 img {
+	position: relative;
+}
+
+.top_footer {
+	height: 50px;
+	line-height: 50px;
+	margin-top: 30px;
+	border-top-color: rgb(231, 231, 231);
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.top_footer {
+	height: 50px;
+	line-height: 50px;
+	margin-top: 30px;
+	border-top-color: rgb(231, 231, 231);
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.vity_width {
+	float: left;
+	width: 100px !important;
+}
+
+.positionVcode {
+	float: left;
+	width: 100px;
+	margin-left: 5px
+}
+
+.positionVcode img {
+	width: 100px;
+	height: 30px
+}
+
+.btn-from {
+	background: #00a688;
+	padding: 7px 10px;
+	border-radius: 4px;
+	border: 1px solid #00a688;
+	border-image: none;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+}
+
+#messagecss {
+	color: red;
+	background: #eee;
+	width: 100%;
+	border-radius: 5px;
+	line-height: 25px;
+	text-align: center;
+	font-family: "微软雅黑";
+	margin-top: 20px;
+	box-shadow: 0px 0px 7px;
+}
+/****????*****/
+.forgetPassword {
+	margin-left: 15px;
+}
+
+.passWordCon {
+	margin: 10px auto;
+	padding: 10px 35px;
+}
+
+.passWordCon ul {
+	list-style: none
+}
+
+.passWordCon ul li {
+	line-height: 35px;
+	height: 35px;
+	position: relative;
+}
+
+.passWordCon ul li label {
+	padding: 0px 5px;
+	font-size: 14px;
+	color: #666;
+	position: relative;
+	width: 100px;
+}
+
+.passWordCon ul li input {
+	width: 285px;
+	line-height: 32px;
+	height: 32px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px
+}
+
+.passWordCon ul li button {
+	display: inline-block;
+	padding: 5px 15px;
+	background: #00a688;
+	color: #fff;
+	margin-right: 10px;
+	border: none;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+
+.passWordCon ul li .verifImg {
+	position: absolute;
+	top: 2px;
+	right: 26px;
+	z-index: 9;
+	width: 86px;
+	height: 29px;
+}
+
+.passWordCon ul li .resetBtn {
+	background: #eee;
+	color: #ddd;
+}
+
+.bodyHeader {
+	position: absolute
+}
+
+.bodyHeader img {
+	padding: 10px;
+}
+
+.passWordSu {
+	margin: 10px auto;
+	padding: 20px 35px;
+}
+
+.passWordSu ul {
+	list-style: none
+}
+
+.passWordSu ul li {
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+}
+
+.passWordSu ul li label {
+	padding: 0px 5px;
+	font-size: 14px;
+	position: relative;
+}
+
+.passWordSu ul li input {
+	width: 285px;
+	line-height: 32px;
+	height: 32px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px
+}
+
+.passWordSu ul li button {
+	display: inline-block;
+	padding: 5px 15px;
+	background: #00a688;
+	color: #fff;
+	margin-right: 10px;
+	border: none;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+
+.passWordSu ul li .verifImg {
+	position: absolute;
+	top: 2px;
+	right: 26px;
+	z-index: 9;
+	width: 86px;
+	height: 29px;
+}
+
+.passWordSu ul li .resetBtn {
+	background: #eee;
+	color: #ddd;
+}
+
+.errorMsg {
+	color: red;
+}
+/***成功提示****/
+.successOk {
+
+}
+
+.successOk .okImg {
+	padding: 10px 0px;
+	text-align: center;
+	width: 100%;
+}
+
+.successOk h4 {
+	padding: 10px 0px;
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	width: 100%;
+}
+
+.successOk p {
+	padding: 0px 10px 10px 10px;
+	font-size: 12px;
+	color: #5A5A5A;
+	text-align: center;
+	line-height: 21px;
+}
+
+.successOkbtn {
+	width: 100px;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 15px auto;
+	display: block;
+	line-height: 35px;
+	cursor: pointer;
+}
+
+.successOkbtn:hover {
+	background: #eee;
+	display: block;
+}
+
+.headerTest {
+	line-height: 70px;
+	font-size: 16px;
+	color: #4B556A;
+	padding-left: 30px
+}
+
+.productHide {
+	position: absolute;
+	z-index: 2;
+	height: 96%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+	margin: 2px 0 0 8px;
+	border-radius: 5px;
+}
+
+.productHide h6 {
+	margin: 30px 0 0 10px;
+	color: #fff;
+	font-size: 16px
+}
+
+.productHide p {
+	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+	text-align: left;
+}
+</style>
+</head>
+
+<body>
+	<input type="hidden" id="basePath" value="http://skycc.weisuda.net:9999/"/>
+	<input type="hidden" id="myshow" value="false">
+	<div class="sign-page">
+		<div class="header" style="height:80px;">
+			<div class="viewport-wrapper" >
+
+				<div class="viewport-inner" style="width:73%;">
+	<div style="float:left">
+	<span class="headerTest" style="padding-left:0;"><img src="/upload/20180731092015logo.png" width="168" height="48" />&nbsp;&nbsp;现在就登陆，体验skycc组合营销平台吧！</span>
+	</div>
+					<div class="header-btn">
+						<img alt="" src="/images/mobile.png"> 咨询热线0731-84896112
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-wrapper clearfix" style="height:60%;">
+			<div class="viewport-inner" style="width:73%;margin-top:30px;">
+				<div class="sign-photo">
+					<div class="sign-text sign-text1">组合,做推广</div>
+					<div class="sign-text sign-text2">效果,自然好！</div>
+					<div class="mt20">
+						<img src="/images/banner.png" width="400px" height="200px" />
+					</div>
+				</div>
+				<div class="sign-wrapper login-wrapper">
+					<div class="page-sub-title">账号登录</div>
+
+					<form class="form-horizontal" role="form" method="POST"
+						action="/Member">
+						<div class="tab-content">
+							<input type="hidden" name="token" value=""> <input
+								type="hidden" name="service" value="登录api地址">
+							<div class="from-wrapper active">
+								<div class="form-group">
+									<input type="text" name="username" id="username"
+										placeholder="登录用户名" class="input-text" value=""
+										autocomplete="new-email" />
+									<div class="check-error-tips email-error"></div>
+								</div>
+								<div class="form-group">
+									<input type="password" placeholder="登录密码" name="password"
+										value="" id="password" class="input-text"
+										autocomplete="new-password" />
+								</div>
+								<div class="form-group captcha-code-wrapper">
+									<input type="text" placeholder="验证码" name="loginCaptcha"
+										class="input-text input-small" /> <span class="code ml10">
+										<img id="captcha" src="/getCaptcha" style="cursor:pointer"
+										onclick="this.src='/getCaptcha?t='+Math.random()" alt="验证码"
+										title="点击刷新" width="100" height="40" border="0"> </span> <a
+										onclick="$('#captcha').click()" class="ml10">看不清?</a>
+								</div>
+								<div class="submit-warning-tips" style="display:block">
+									<i class="icon icon-warning"></i>
+									公共场所不建议自动登录，以防账号丢失
+								</div>
+								<div class="form-group">
+									<input type="submit" value="登录" class="button button-primary" />
+								</div>
+								<div class="other-link">
+									<span class="save_password"> <!-- <i class="checkbox checked"></i> -->
+										<label class="cr-styled"> <!-- <input type="checkbox">
+		                                <i class="fa"></i>
+		                                	记 住 --> <input type="checkbox"
+											name="rememberMe" />记住我 </label> </span> <input type="hidden" id="remember"
+										name="remember" value="true"> <span class="fr">
+										
+										<a href="javascript:puPassName();" class="mr0">忘记密码?</a> </span>
+								</div>
+								<div class="more-login-wrapper clearfix"></div>
+							</div>
+
+							<div class="from-wrapper"></div>
+						</div>
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 找回密码 -->
+		<form id="forgetForm" action="">
+			<div class="" id="user-password" style="display: none;">
+				<div class="layadmin-user-login-main">
+					<div
+						class="layadmin-user-login-box layadmin-user-login-body layui-form">
+
+
+						<div class="layui-form-item">
+						    <label class="layui-form-label" style="width:40px;">用户名:</label>
+						    <div class="layui-col-xs7">
+							  <input type="text"
+								name="loginName" id="loginName" lay-verify="required"
+								placeholder="请输入用户名" class="layui-input layui-form-danger">
+							</div>
+						</div>
+						<br>
+						<div class="layui-form-item">
+							<div class="layui-row">
+							    <label class="layui-form-label" style="width:40px;">验证码:</label>
+								<div class="layui-col-xs4">
+									<input type="text"
+										name="smscode" id="smscode" lay-verify="required"
+										placeholder="验证码" class="layui-input">
+								</div>
+								<div class="layui-col-xs4">
+									<div style="margin-left: 10px;">
+										<img src="" onclick="this.src='/getCaptcha?t='+Math.random()"
+											class="layadmin-user-login-codeimg" id="LAY-user-get-vercode">
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<!--  <div class="layui-form-item">
+	            <div class="layui-row"> <div class="layui-col-xs7">
+	            <label class="layadmin-user-login-icon layui-icon layui-icon-vercode" for="LAY-user-login-smscode"></label>
+	            <input type="text" name="vercode" id="LAY-user-login-smscode" lay-verify="required" placeholder="短信验证码" class="layui-input"> </div>
+	            <div style="margin-left: 10px;">
+	            <button type="button" class="layui-btn layui-btn-primary layui-btn-fluid" id="LAY-user-forget-getsmscode">获取验证码</button>
+	            </div>
+	            </div> </div>  -->
+						<!-- <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="LAY-user-forget-submit">找回密码</button>  -->
+					</div>
+				</div>
+
+			</div>
+		</form>
+
+		<!--找回密码第二步--->
+		<form class="layui-form" id="nextgetForm" action="">
+			<div class="" id="nextPassword" style="display: none;">
+				<div class="layadmin-user-login-main">
+				<!--
+					<div class="layadmin-user-login-box layadmin-user-login-header">
+						<h2>skycc组合营销平台</h2>
+						<p>找回密码</p>
+					</div>
+				-->
+					<div
+						class="layadmin-user-login-box layadmin-user-login-body layui-form">
+						<!-- <div class="layui-form-item">
+		       			<label >选择模式：
+		     				 <input type="radio" id="sendMode_2" name="sendMode" value="2" onclick="selectSendMode()" style="width: 20px;height:auto;"/>手机
+		      			</label>
+		       		</div> -->
+						<input type="hidden" id="oneName" name="oneName" value="" />
+						<div class="layui-form-item">
+							<label class="layui-form-label">选择模式</label>
+							<div class="layui-input-block">
+								<input type="radio" id="sendMode_1" name="sendMode"
+									lay-filter="sendMode" onclick="selectSendMode();" value="1"
+									title="手机" checked=""> <input type="radio"
+									id="sendMode_2" name="sendMode" lay-filter="sendMode"
+									onclick="selectSendMode();" value="2" title="邮箱">
+							</div>
+						</div>
+
+						<div class="layui-form-item">
+							<div class="layui-inline">
+								<label class="layui-form-label" id="emailLabel">验证手机</label>
+								<div class="layui-input-inline">
+									<input type="tel" id="logphone" name="logphone"
+										lay-verify="required" autocomplete="off"
+										class="layui-input">
+								</div>
+								<span class="message"></span>
+							</div>
+							<!-- <label id="emailLabel">手机号码:</label>
+			      		<input type="text" id="logEmail" name="logEmail" class="" placeholder="请输入手机号码"><span class="message"></span> -->
+						</div>
+						<!-- <div class="layui-form-item">
+			          <label class="layadmin-user-login-icon layui-icon layui-icon-cellphone" for="LAY-user-login-cellphone"></label>
+			          <input type="text" name="loginName" id="loginName" lay-verify="phone" placeholder="请输入用户名" class="layui-input layui-form-danger">
+			       </div>
+			       <br>
+
+		           <div class="layui-form-item">
+			          <div class="layui-row">
+			             <div class="layui-col-xs7">
+			          		<label class="layadmin-user-login-icon layui-icon layui-icon-vercode" for="LAY-user-login-vercode"></label>
+			          		<input type="text" name="smscode" id="smscode" lay-verify="required" placeholder="短信验证码" class="layui-input">
+			           	  </div>
+			           	  <div class="layui-col-xs5">
+			           	     <div style="margin-left: 10px;">
+			           		 <img src="" onclick="this.src='/getCaptcha?t='+Math.random()"class="layadmin-user-login-codeimg" id="LAY-user-get-vercode"> </div>
+			              </div>
+			           </div>
+		            </div>  -->
+					</div>
+				</div>
+
+			</div>
+		</form>
+		<!--修改密码结束-->
+
+		<!--修改密码--->
+		<div id="nextDiv" class="passWordCon" style="display: none;">
+			<form id="nextForm" action="">
+				<input type="hidden" id="userType_q" name="userType" value="3" />
+				<ul>
+					<input type="hidden" id="v_logUser" name="logUser" class="" />
+					<li><label>选择模式： <!--  <input type="radio" id="sendMode_1" name="sendMode" value="1" onclick="selectSendMode()" style="width: 20px;height:auto;" checked/>邮箱--->
+							<input type="radio" id="sendMode_2" name="sendMode" value="2"
+							onclick="selectSendMode()" style="width: 20px;height:auto;" />手机
+					</label></li>
+					<li><label id="emailLabel">手机号码:</label> <input type="text"
+						id="logEmail" name="logEmail" class="" placeholder="请输入手机号码"><span
+						class="message"></span>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<!--修改密码结束-->
+
+		<!--注册账号--->
+		<div id="registerDiv" class="passWordSu" style="display: none;">
+			<form id="registerForm" action="" class="layui-form">
+				<input type="hidden" id="userType_2" name="userType2" /> <input
+					type="text" id="validatenum" value="" style="display: none;" />
+				<ul class="reg-box">
+					<!--
+		  <li><label >*用户名：</label>
+		  <input type="text" class="sName" id="sName" name="SupperName"  placeholder="请输入用户名"><span class="error"></li>
+		  <li><label >*密码：</label>
+		      <input type="password" class="suName"  id="suName" name="Suname"    placeholder="请输入密码" /><span class="error1"></li>
+		  <li><label >*确认密码：</label>
+		      <input type="password" class="suPwd" id="suPwd" name="suPwd"   placeholder="确认密码" /><span class="error2"></li>
+		  -->
+					<!--  <li><label >*联&nbsp;&nbsp;&nbsp;系&nbsp;&nbsp;&nbsp;&nbsp;人：
+		      <input type="text" class="suRela" id="suRela" name="SupperRela"   placeholder="输入真实姓名" /><span class="errorMsg error4">
+		  </label>
+		  </li>   -->
+					<div class="layui-form-item">
+						<label class="layui-form-label"><font style="color:#E2003B">*</font>联系人：</label>
+						<div class="layui-input-block">
+							<input type="text" id="suRela" name="SupperRela" lay-verify="username"
+								placeholder="输入真实姓名" autocomplete="off" class="layui-input" style="width:271px;"/>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label"><font style="color:#E2003B">*</font>手机号码：</label>
+						<div class="layui-input-block">
+							<input type="text" id="suMobile" name="SupperMobile" lay-verify="mobile"
+								placeholder="输入手机号码" autocomplete="off" class="layui-input" style="width:271px;" />
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label"><font style="color:#E2003B">*</font>短信验证码：</label>
+						<div class="layui-input-block">
+							<input type="text" id="validate" name="validate" lay-verify="validate"
+								placeholder="输入手机验证码" autocomplete="off" class="layui-input" style="width:126px;float:left"/>
+							 <input type="button"  onclick="ptemp();" class="layui-btn" id="yzmbt" style="width:130px; border-radius: 2px;" value="免费获得验证码"/>
+						</div>
+					</div>
+				<!-- 	<li><label>*手机号码(用户名)：</label> <input type="text"
+						class="suMobile" id="suMobile" name="SupperMobile"
+						placeholder="输入手机号码" /><span class="errorMsg error3">
+					</li> -->
+					<!-- <li><label>*短信验证码：</label> <input type="text" class="suRela"
+						id="validate" name="validate" placeholder="输入手机验证码"
+						style="width:100px;" /> <input type="button" value="免费获得验证码"
+						onclick="ptemp();" class="layui-btn  layui-btn-radius" id="yzmbt"
+						style="width:130px;" /> <span class="errorMsg error5">
+					</li> -->
+				</ul>
+			</form>
+		</div>
+		
+		<div style="clear:both;"></div>
+		<div class="footer-wrapper" style="padding-top: 0; text-align: center;">
+			<p class="copy-right">版权所有：长沙圣捷信息技术有限公司 ©2009-2019 All Rights
+				Reserved.  <a href="http://www.skycc.net" target="_blank">访问官网</a></p>
+		</div>
+	</div>
+    <style>
+    #functionShow ul li{
+		margin-bottom:32px;
+	}
+    </style>
+	<script src="/common/js/jquery-1.11.1.min.js"></script>
+	<script src="/plug/layer/layui.js"></script>
+	<script src="/common/js/Cookie.js"></script>
+	<script src="/js/login/login.js?version=1.1"></script>
+</body>
+</html>
